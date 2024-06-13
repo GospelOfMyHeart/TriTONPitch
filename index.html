@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout with Flexbox</title>
@@ -68,15 +71,44 @@
         }
         .section {
             width: 100%;
-            text-align: center;
         }
         .section h2 {
             margin-top: 0;
             color: #333;
         }
-        .section p {
-            color: #666;
+        ul {
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
         }
+        li>h3 {
+            padding: 10px 10px 0 0;
+            display: block;
+        }
+        .first-element {
+            padding-top: 0
+        }
+        li>ul{
+            margin-left: 5%
+        }
+        h2,h3{
+            font-family: "Josefin Sans", sans-serif;
+        }
+        li{
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 400;
+            text-align: justify;
+        }
+        p{
+            font-family: "Josefin Sans", sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        li>span{
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -91,27 +123,61 @@
             <div class="column column-1">
                 <div class="section">
                     <h2>Overview</h2>
-                    <p>Brief description of the overview section, mimicking the content from the provided image.</p>
+                    <p>Match TriTon is a unique take on the popular Match-3 puzzle genre, offering an infinite gameplay mode tied to blockchain technology. Players match tiles endlessly, earning points and rewards without the constraints of traditional levels. The game integrates with the TON blockchain, providing players with tangible rewards in the form of custom tokens.</p>
                 </div>
             </div>
             <div class="column column-2">
-                <div class="row row-1">
-                    <div class="section">
-                        <h2>Key Features</h2>
-                        <p>Details about the key features, similar to what is shown in the image.</p>
-                    </div>
-                </div>
-                <div class="row row-2">
-                    <div class="section">
-                        <h2>Business Model</h2>
-                        <p>Information about the business model as depicted in the image.</p>
-                    </div>
+                <div class="section">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>
+                            <h3 class = "first-element">Significance in Telegram Apps Center</h3> Unlike many games in the Telegram Apps Center that focus on simple clicker mechanics, Match TriTon offers a rich and engaging Match-3 gameplay experience. Clicker games often lead to bot exploitation and lack meaningful gameplay. In contrast, Match TriTon’s thoughtful and engaging gameplay attracts real players, bringing more value to the TON blockchain ecosystem by reducing the potential for bot-based exploitation.
+                        </li>
+                        <li>
+                            <h3>Infinite Mode</h3> Unlike traditional Match-3 games, Match TriTon features an infinite mode, eliminating levels and allowing continuous play. This keeps the gameplay engaging and competitive, as players aim to achieve higher scores.
+                        </li>
+                        <li>
+                            <h3>Blockchain Integration</h3> Match TriTon is connected to the TON blockchain, enabling players to earn custom tokens based on their in-game performance. This integration provides a real-world value to the time and effort spent in the game.
+                        </li>
+                        <li>
+                            <h3>Referral System</h3> Players can invite friends to join the game and earn additional tokens. They will receive 20% of the tokens their friends earn and 10% from the friends of their friends, incentivizing community growth and engagement.
+                        </li>
+                        <li>
+                            <h3>Account Upgrades</h3> Future updates will introduce account upgrades that allow players to earn tokens passively based on their time spent in the game. These upgrades enhance the game's longevity and player retention.
+                        </li>
+                        <li>
+                            <h3>Monetization through Boosters</h3> The game will offer a variety of boosters for purchase. These special tiles, such as bombs that destroy tiles in a 5-cell radius, add strategic depth to the gameplay and offer players an edge in achieving higher scores.
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="column column-3">
                 <div class="section">
-                    <h2>Additional Content</h2>
-                    <p>Content that fits the layout, providing more details or information.</p>
+                    <h2>Business Model</h2>
+                    <ul>
+                        <li>
+                            <h3 class="first-element">Token Economy</h3>
+                            <li><span>Earning Tokens</span> — Players earn tokens based on their scores in the infinite mode. These tokens can be stored in their TON blockchain wallets.</li>
+                            <li><span>Referral Earnings</span> — Players earn additional tokens through a referral system, with 20% of friends' earnings and 10% of friends of friends' earnings.</li>
+                        </li>
+                        <li>
+                            <h3>In-Game Purchases</h3>
+                            <li><span>Boosters</span> — Players can purchase special boosters that enhance gameplay, such as bombs and other power-ups that offer strategic advantages. These purchases provide immediate in-game benefits and contribute to the game's revenue.</li>
+                        </li>
+                        <li>
+                            <h3>Account Upgrades</h3>
+                            <li><span>Passive Earnings</span> — Players can purchase account upgrades that enable passive token earnings based on the time spent in the game. These upgrades can be tiered, offering increasing benefits and encouraging continuous play and investment.</li>
+                        </li>
+                        <li>
+                            <h3>Advertising (Optional)</h3>
+                            <li><span>Rewarded Ads</span> — Players can watch ads to earn small amounts of tokens or in-game currency. This offers an additional revenue stream without disrupting the core gameplay experience.</li>
+                        </li>
+                        <li>
+                            <h3>Community and Social Features</h3>
+                            <li><span>Leaderboards and Competitions</span> — Regular leaderboards and competitions can incentivize players to achieve higher scores and earn more tokens. This fosters a competitive community and encourages regular play.</li>
+                            <li><span>Social Sharing</span> — Players can share their achievements and referral links on social media, driving organic growth and engagement.</li>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
