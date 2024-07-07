@@ -1,5 +1,5 @@
 {
-  "url": "https://example.com/", // site of your application, in non webgl build use any
-  "name": "TriTON", // project name, will be displayed in wallet 
-  "iconUrl": "https://gospelofmyheart.github.io/TriTONPitch/logo.png" // project logo, will be displayed in wallet 
+  "url": "https://continuation.finance",
+  "name": "TriTON",
+  "iconUrl": "https://gospelofmyheart.github.io/TriTONPitch/logo.png"
 }
